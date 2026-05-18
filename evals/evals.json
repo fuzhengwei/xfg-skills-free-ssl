@@ -1,0 +1,25 @@
+{
+  "name": "xfg-skills-free-ssl",
+  "version": "1.0.0",
+  "description": "免费 SSL 申请技能评估用例",
+  "evals": [
+    {
+      "id": "eval-001",
+      "name": "询问域名",
+      "input": "帮我申请免费 ssl",
+      "expected": "请告诉我您要配置证书的域名是什么？"
+    },
+    {
+      "id": "eval-002",
+      "name": "域名与邮箱已提供，先检查 DNS",
+      "input": "帮我给 portainer.your-domain.com 申请免费证书，邮箱用 admin@your-domain.com",
+      "expected": "检查域名 DNS 解析"
+    },
+    {
+      "id": "eval-003",
+      "name": "遇到安全组问题提示",
+      "input": "本机 curl 通了，但浏览器访问超时",
+      "expected": "检查云服务器安全组/防火墙是否放行 TCP 443"
+    }
+  ]
+}
